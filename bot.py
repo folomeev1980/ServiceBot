@@ -11,7 +11,7 @@ def main():
 
     curency_dic = currency_import()
 
-    if float(curency_dic["usdrur"]) > usdrur:
+    if curency_dic["usdrur"] > usdrur:
         t.send_message(t.chat_id(), curency_message(currency_import()))
 
 
