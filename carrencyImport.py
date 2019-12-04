@@ -14,24 +14,24 @@ def currency_import():
         if "," in usdrur:
             usdrur = float(usdrur.replace(",", "."))
         else:
-            usdrur=float(usdrur)
+            usdrur = float(usdrur)
         eurusd = soup.find("td", id="CurrenciesEUR/USDPrice").text.strip()
         if "," in eurusd:
             eurusd = float(eurusd.replace(",", "."))
         else:
-            eurusd=float(eurusd)
+            eurusd = float(eurusd)
 
         brent = soup.find("td", id="ЭнергоресурсыBrentPrice").text.strip()
         if "," in brent:
             brent = float(brent.replace(",", "."))
         else:
-            brent=float(brent)
+            brent = float(brent)
         gold = soup.find("td", id="МеталлыGoldPrice").text.strip().split()
         gold = gold[0] + gold[1]
         if "," in gold:
             gold = float(gold.replace(",", "."))
         else:
-            gold=float(gold)
+            gold = float(gold)
     except Exception as e:
         print(e)
         usdrur = ""
