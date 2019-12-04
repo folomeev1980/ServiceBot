@@ -32,8 +32,8 @@ def currency_import():
             gold = float(gold.replace(",", "."))
         else:
             gold=float(gold)
-    except:
-        print("except")
+    except Exception as e:
+        print(e)
         usdrur = ""
         eurusd = ""
         brent = ""
