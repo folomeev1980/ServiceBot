@@ -1,0 +1,9 @@
+Output_Gif/
+Output_Pictures/
+build/
+venv
+.vscode
+.idea
+__pycache__/
+.vscode/
+venv/
