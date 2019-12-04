@@ -7,7 +7,7 @@ import time
 
 def main():
     t = Telega("981624897:AAFD1wu7bBI4XCR3JHvf9iYqRLPZujpDLJM")
-    usdrur = 63.80
+    usdrur = 63.50
 
     curency_dic = currency_import()
 
