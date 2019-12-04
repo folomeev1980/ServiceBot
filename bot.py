@@ -20,7 +20,7 @@ def main():
 
 
 if __name__ == "__main__":
-    schedule.every(25).minutes.do(main)
+    schedule.every(32).minutes.do(main)
 
     while True:
         schedule.run_pending()
